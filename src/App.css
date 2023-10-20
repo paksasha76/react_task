@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #000000;
+  --primary-color2: #ffffff;
+}
+
+.App {
+  text-align: center;
+  max-width: 679px;
+  background-color: var(--primary-color2);
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: relative;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 96px;
+  font-family: "Kreon";
+  font-style: "Regular";
+}
+
+.footer {
+  width: 580px;
+  background-color: var(--primary-color);
+  color: var(--primary-color2);
+  padding: 50px;
+  position: relative;
+  z-index: 3;
+}
+
+.footer__title {
+  font-size: 96px;
+  font-family: "Kreon";
+  font-style: "Regular";
+  margin: auto;
+}
+
+.header__currency {
+  width: 181px;
+  height: 43px;
+  margin-right: 100px;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__description {
+  font-size: 20px;
+  font-style: "Regular";
+  font-family: "Kreon";
+  max-width: 87px;
+}
+
+.header__img {
+  background-image: url("./images/Kitten.png");
+  width: 200px;
+  height: 341px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  transform: translateY(40px);
+}
