@@ -7,11 +7,12 @@ import './Header.css'
 export function Header() {
   return (
     <header className="header">
-      <div>
+      <div className="leftHeader">
         <HeaderContainer />
-        <HeaderCurrency />
-      </div>
+       
+        </div>
       <HeaderImg />
+     
     </header>
   );
 }
