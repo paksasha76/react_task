@@ -4,7 +4,7 @@ import { Footer } from "./Footer/Footer";
 
 import { Header } from "./Header/Header";
 
-const rates = [];
+const rates: any [] = [];
 
 async function getCurrencies() {
   const response = await fetch("https://api.coinbase.com/v2/currencies");
