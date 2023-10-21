@@ -1,3 +1,5 @@
+import "./HeaderCurrency.css"
+
 export function HeaderCurrency() {
   return (
     <select className="header__currency">

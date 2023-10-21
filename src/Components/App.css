@@ -5,45 +5,24 @@
 
 .App {
   text-align: center;
-  max-width: 679px;
+  min-width: 400px;
   background-color: var(--primary-color2);
   margin: 0 auto;
-  margin-top: 200px;
-}
-.header {
   display: flex;
-  justify-content: space-between;
-  padding: 30px;
-  position: relative;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .header__logo {
+  margin-left: 46px;
   margin: 0;
   font-size: 96px;
   font-family: "Kreon";
   font-style: "Regular";
 }
 
-.footer {
-  width: 580px;
-  background-color: var(--primary-color);
-  color: var(--primary-color2);
-  padding: 50px;
-  position: relative;
-  z-index: 3;
-}
-
-.footer__title {
-  font-size: 96px;
-  font-family: "Kreon";
-  font-style: "Regular";
-  margin: auto;
-}
-
-.header__currency {
-  width: 181px;
-  height: 43px;
-  margin-right: 100px;
+.header__logo_container {
+  margin-left: 46px;
 }
 
 .header__container {
@@ -58,12 +37,18 @@
 }
 
 .header__img {
-  background-image: url("./images/Kitten.png");
+  background-image: url("../images/Kitten.png");
   width: 200px;
   height: 341px;
   position: absolute;
   background-repeat: no-repeat;
-  top: 0;
+  transform: translateY(180px);
   right: 0;
-  transform: translateY(40px);
 }
+
+@media screen and (max-width: 660px){
+    .header__img {
+      display: none;
+    }
+}
+

@@ -1,6 +1,8 @@
 import { HeaderContainer } from "./HeaderContainer/HeaderContainer";
 import { HeaderCurrency } from "./HeaderCurrency/HeaderCurrency";
-import { HeaderContainerImg } from "./HeaderContainerImg/HeaderContainerImg";
+import { HeaderImg } from "./HeaderImg/HeaderImg";
+
+import './Header.css'
 
 export function Header() {
   return (
@@ -8,8 +10,8 @@ export function Header() {
       <div>
         <HeaderContainer />
         <HeaderCurrency />
-        <HeaderContainerImg />
       </div>
+      <HeaderImg />
     </header>
   );
 }
