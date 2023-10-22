@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./HeaderSelect.css";
 
 interface Currencies {
   id: string;

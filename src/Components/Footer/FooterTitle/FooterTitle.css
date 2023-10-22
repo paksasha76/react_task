@@ -1,12 +1,10 @@
 .footer__title {
-    font-size: 96px;
-    font-family: "Kreon";
-    font-style: "Regular";
-    margin: auto;
-  }
+  font-size: 96px;
+  margin: auto;
+}
 
-  @media screen and (max-width: 660px){
-    .footer__title {
-      font-size: 64px;
-    }
+@media screen and (max-width: 660px) {
+  .footer__title {
+    font-size: 64px;
   }
+}

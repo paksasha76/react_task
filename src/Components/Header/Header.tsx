@@ -11,7 +11,9 @@ export function Header() {
         <HeaderContainer />
         <HeaderSelect />
       </div>
-      <HeaderImg />
+      <div className="header__right">
+        <HeaderImg />
+      </div>
     </header>
   );
 }

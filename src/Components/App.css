@@ -39,89 +39,16 @@
   flex-grow: 2;
 }
 
+.header__description {
+  font-size: 20px;
+  max-width: 87px;
+  margin-left: 10px;
+}
+
 .header__right {
   flex-grow: 1;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
-}
-
-.header__description {
-  font-size: 20px;
-  font-style: "Regular";
-  font-family: "Kreon";
-  max-width: 87px;
-  margin-left: 10px;
-}
-
-.header__select {
-  position: relative;
-  margin-left: 29px;
-  max-width: 200px;
-}
-
-.header__select-item, .header__select-btn {
-  height: 43px;
-  padding: 0;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding-left: 15px;
-  cursor: pointer;
-  border: #DAD6D6 1px solid;
-  flex-grow: 1;
-}
-
-.header__select-btn {
-  width: 181px;
-  border-radius: 10px;
-  background: #fcfcfc;
-  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  color: #333;
-  justify-content: space-between;
-  font-weight: 500;
-}
-
-.header__select-btn::after {
-  flex-shrink: 0;
-  width: 1rem;
-  height: 0.75rem;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
-  background-image: url("../images/Vector\ \(1\).svg");
-  content: "";
-}
-
-.header__select-content {
-  position: absolute;
-  top: 110%;
-  width: 181px;
-  height: 172px;
-  background: var(--primary-color2);
-  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  color: #333;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  z-index: 5;
-}
-
-.header__select-item:hover, .header__select-btn:hover {
-  background-color: #F0EFEF
-}
-
-
-.header__container-img {
-  position: absolute;
-  transform: translateY(140px);
-}
-
-.header__select {
-  width: 400px;
-}
-
-@media screen and (max-width: 660px) {
-  .header__img {
-    display: none;
-  }
 }
