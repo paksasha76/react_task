@@ -66,6 +66,17 @@
   justify-content: space-between;
 }
 
+.header__select-btn::after {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 0.75rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  background-image: url("../images/Vector\ \(1\).svg");
+  background-size: cover;
+  content: "";
+}
+
 .header__select-content {
   position: absolute;
   top: 110%;

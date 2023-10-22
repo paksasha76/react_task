@@ -2,9 +2,7 @@ import React from 'react'
 
 export function HeaderSelect() {
     const [isActive, setIsActive] = React.useState(false)
-    function openSelect() {
-        setIsActive(true)
-    }
+    const [currencies, setCurrencies] = React.useState(null)
     return(
         <div className="header__select">
             <div className="header__select-btn" onClick={(e) => setIsActive(!isActive)}>RUB</div>
