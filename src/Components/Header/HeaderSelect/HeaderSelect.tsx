@@ -17,7 +17,15 @@ export function HeaderSelect() {
         className="header__select-btn"
         onClick={(e) => setIsActive(!isActive)}
       >
-        RUB
+        {currencies?.map((currency: any) => {
+          if (currency.id === "AED") {
+            return (
+              <div key={currency.id} className="header__select-item">
+                {currency?.id}
+              </div>
+            );
+          }
+        })}
       </div>
       {isActive && (
         <div className="header__select-content">
