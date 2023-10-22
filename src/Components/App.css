@@ -47,6 +47,7 @@
   font-style: "Regular";
   font-family: "Kreon";
   max-width: 87px;
+  margin-left: 10px;
 }
 
 .header__select {
