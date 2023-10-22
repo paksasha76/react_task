@@ -1,37 +1,42 @@
-import React from "react";
+import { useState, useEffect } from "react";
+
+interface Currencies {
+  id: string;
+  min_size: string;
+  name: string;
+}
 
 export function HeaderSelect() {
-  const [isActive, setIsActive] = React.useState(false);
-  const [currencies, setCurrencies] = React.useState<string[]>([]);
+  const [isActive, setIsActive] = useState(false);
+  const [currencies, setCurrencies] = useState<Currencies[]>([]);
+  const [value, setValue] = useState<Currencies | undefined>();
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("https://api.coinbase.com/v2/currencies")
       .then((res) => res.json())
       .then((res) => {
         setCurrencies(res.data);
+        setValue(res.data[0]);
       });
   }, []);
+
   return (
     <div className="header__select">
-      <div
+      <button
         className="header__select-btn"
-        onClick={(e) => setIsActive(!isActive)}
+        onClick={() => setIsActive(!isActive)}
       >
-        {currencies?.map((currency: any) => {
-          if (currency.id === "AED") {
-            return (
-              <div key={currency.id} className="header__select-item">
-                {currency?.id}
-              </div>
-            );
-          }
-        })}
-      </div>
+        {value?.id}
+      </button>
       {isActive && (
         <div className="header__select-content">
-          {currencies?.map((currency: any) => {
+          {currencies?.map((currency) => {
             return (
-              <div key={currency.id} className="header__select-item">
+              <div
+                onClick={() => setValue(currency)}
+                key={currency.id}
+                className={`header__select-item`}
+              >
                 {currency?.id}
               </div>
             );

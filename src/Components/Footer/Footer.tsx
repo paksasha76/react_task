@@ -1,6 +1,6 @@
 import "./Footer.css";
-import "./FooterTitle/FooterTitle.css";
-import React from "react";
+import "./FooterTitle/FooterTitle.css"
+import React from "react"
 
 export function Footer() {
   const [currencyName, setCurrencies] = React.useState<string[]>([]);
@@ -14,11 +14,14 @@ export function Footer() {
   }, []);
   return (
     <footer className="footer">
-      {currencyName?.map((currency: any) => {
-        if (currency.name == "Russian Ruble") {
-          return <p className="footer__title">{currency?.name}</p>;
-        }
-      })}
+        {currencyName?.map((currency: any) => {
+          if(currency.name == "Russian Ruble") {
+            return (
+              <p className="footer__title">{
+                currency?.name
+                }</p>
+            );
+          }})}
     </footer>
   );
 }

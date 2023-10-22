@@ -1,9 +1,8 @@
 import { HeaderContainer } from "./HeaderContainer/HeaderContainer";
-import { HeaderCurrency } from "./HeaderCurrency/HeaderCurrency";
+import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
 import { HeaderImg } from "./HeaderImg/HeaderImg";
 
 import "./Header.css";
-import { HeaderSelect } from "./HeaderSelect/HeaderSelect";
 
 export function Header() {
   return (
