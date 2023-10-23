@@ -19,36 +19,3 @@
   flex-direction: column;
   height: 100vh;
 }
-
-.header__logo {
-  margin-left: 46px;
-  margin: 0;
-  font-size: 96px;
-}
-
-.header__logo_container {
-  margin-left: 46px;
-}
-
-.header__container {
-  display: flex;
-  margin: 0;
-}
-
-.header__left {
-  flex-grow: 2;
-}
-
-.header__description {
-  font-size: 20px;
-  max-width: 87px;
-  margin-left: 10px;
-}
-
-.header__right {
-  flex-grow: 1;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
