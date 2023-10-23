@@ -20,9 +20,9 @@ export function Footer() {
   }, []);
   return (
     <footer className="footer">
-      {currencyName?.map((currency) => {
+      {currencyName?.map((currency, index) => {
         if (currency.name === "Russian Ruble") {
-          return <p className="footer__title">{currency?.name}</p>;
+          return <p className="footer__title" key={index}>{currency?.name}</p>;
         }
       })}
     </footer>
